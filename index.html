@@ -793,4 +793,19 @@ https://templatemo.com/tm-570-chain-app-dev
   <script src="assets/js/custom.js"></script>
 </body>
 
+<script>
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    alert("Geolocation is not supported by this browser.");
+  }
+
+
+  function showPosition(position) {
+    alert("Latitude: " + position.coords.latitude +
+      "   Longitude: " + position.coords.longitude);
+  }
+</script>
+
+<!-- color code: #8002ed -->
 </html>
